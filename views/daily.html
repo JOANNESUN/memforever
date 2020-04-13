@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="daily.css">
     <!-- <link rel="stylesheet" href="/views/css/style.css"> -->
 </head>
 <body>
@@ -52,16 +53,24 @@
           </nav>
     </header>
     <main>
-        <div class='parent'>
-            <span id='draggableSpan'
-              draggable='true'
-              ondragstart='onDragStart(event);'>
-                draggable
-            </span>
-          
-            <span> dropzone </span>
+      <section class="container">
+          <div class="left-half">
+            <article>
+              <h1>Daily Activities</h1>
+            
+        <p class = 'draggable' draggable="true">1. take heart medicine</p>
+        <p class = 'draggable' draggable="true">2. take blood pressure meds</p>
+        <p class = 'draggable' draggable="true">3. measure blood pressure</p>
+        <p class = 'draggable' draggable="true">4. measure blood sugar</p>
+          </article>
           </div>
-    </main>
+          <div class="right-half">
+              <article>
+                <h1>Done Zone</h1>
+                <p>drop the list here</p>
+              </article>
+            </div>
+          </section>
     <footer>
           <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

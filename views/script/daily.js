@@ -1,16 +1,28 @@
-function onDragStart(event) {
-    event
-      .dataTransfer
-      .setData('text/plain', event.target.id);
-  }
+const draggables = document.querySelectorAll('.draggable')
+const containers = document.querySelectorAll('.container')
 
-  function onDragStart(event) {
-    event
-      .dataTransfer
-      .setData('text/plain', event.target.id);
-  
-    event
-      .currentTarget
-      .style
-      .backgroundColor = 'yellow';
-  }
+draggables.forEach(draggable => {
+draggable.addEventListener('dragstart', ()=>{
+    draggable.classList.add('dragging')
+
+})
+draggable.addEventListener('dragend',()=>{
+    draggable.classList.remove('dragging')
+})
+});
+
+containers.forEach(container=> {
+    container.addEventListener('dragover', e =>{
+        e. preventDefault() // change the cursor to allow sign only 
+        const draggable = document.querySelector('.dragging')
+        container.appendChild(draggable)
+    })
+});
+
+function dragElement (container, y){
+
+    const draggeableE = [container.querySelectorAll('draggable:not(.dragging)')]
+
+
+}
+

@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(248, 246, 246);
+    margin: 0;
+}
+
+.container {
+    float: right;
+    background-color: rgb(87, 164, 236);
+    padding: 2 rem;
+    margin-top: 2 rem;
+}
+
+
+
+
+.draggable{
+
+    padding: 1 rem;
+    background-color: rgb(243, 247, 247);
+    border: 1px solid black;
+    cursor: move;
+    border-radius: 20px;
+
+}
+
+.draggable.dragging{
+
+    opacity: .5;
+}
+
+/* 
+#drop{
+
+    background-color: cornflowerblue;
+} */
+
+/* Pen-specific styles */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 1.25rem;
+    font-family: Helvetica;
+    line-height: 150%;
+    /* text-shadow: 0 2px 2px #6b6763; */
+  }
+  
+  section {
+    color: rgb(34, 32, 32);
+    text-align: center;
+  }
+  
+  div {
+    height: 100%;
+  }
+  
+  article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  /* Pattern styles */
+  .container {
+    display: table;
+    width: 100%;
+  }
+  
+  .left-half {
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+    /* background-color: #e6c846; */
+    position: absolute;
+    left: 0px;
+    width: 50%;
+  }
+  
+  .right-half {
+    background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+    /* background-color: #86e7ee; */
+    position: absolute;
+    right: 0px;
+    width: 50%;
+  }
