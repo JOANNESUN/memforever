@@ -59,4 +59,7 @@ app.get('/user', function (req, res){
     res.send("user log in + data");
     }
     );
-app.listen('3005');
+
+const port = process.env.PORT || 3001 // steps of deployment 
+// however when running on local server will go to 3001
+app.listen(port); 
